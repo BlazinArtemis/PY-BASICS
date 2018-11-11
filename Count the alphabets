@@ -1,0 +1,6 @@
+#The count function counts the number of alphabets from n to z
+
+
+def Count(s):
+    import re
+    return str(len(re.findall('[n-z]', s)))
