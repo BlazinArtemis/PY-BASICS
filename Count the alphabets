@@ -1,5 +1,5 @@
 #The count function counts the number of alphabets from n to z
-
+#The function takes in a string(s) as its argument
 
 def Count(s):
     import re
