@@ -1,0 +1,22 @@
+#Given a string,This replaces every letter with its position in the alphabet.
+#If anything in the text isn't a letter it would be ignored.
+
+#list out the alphabets
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+def alphabet_position(text):
+#check if the text argument is a string
+  if type(text) == str:
+#sets text as lower,in the case a user inputs a uppercase letter        
+        text = text.lower()
+#create a new string result to hold numbers
+        result = ''
+
+       for alpha in text:
+            #test if the character iis an alphabet
+            if alpha.isalpha() == True:
+                
+                result = result + ' ' + str(alphabet.index(letter) + 1)
+                #remove all the spaces(' ') in the code
+                #removes the leading whitespace and returns result
+        return result.lstrip(' ')
